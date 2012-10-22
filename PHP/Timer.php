@@ -95,7 +95,7 @@ class PHP_Timer
     {
         $buffer = '';
 
-        $hours   = sprintf('%02d', ($time >= 3600) ? floor($time / 3600) : 0);
+        $hours   = xsprintf('%02d', ($time >= 3600) ? floor($time / 3600) : 0);
         $minutes = sprintf(
                      '%02d',
                      ($time >= 60)   ? floor($time /   60) - 60 * $hours : 0
