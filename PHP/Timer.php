@@ -110,7 +110,7 @@ class PHP_Timer
             if ($seconds != '1') {
                 $buffer .= 's';
             }
-        } 
+        }
         else {
             if ($hours > 0) {
                 $buffer = $hours . ':';
