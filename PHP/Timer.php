@@ -110,7 +110,8 @@ class PHP_Timer
             if ($seconds != '1') {
                 $buffer .= 's';
             }
-        } else {
+        } 
+        else {
             if ($hours > 0) {
                 $buffer = $hours . ':';
             }
@@ -149,11 +150,9 @@ class PHP_Timer
 if (isset($_SERVER['REQUEST_TIME_FLOAT'])) {
     PHP_Timer::$requestTime = $_SERVER['REQUEST_TIME_FLOAT'];
 }
-
 else if (isset($_SERVER['REQUEST_TIME'])) {
     PHP_Timer::$requestTime = $_SERVER['REQUEST_TIME'];
 }
-
 else {
     PHP_Timer::$requestTime = time();
 }
