@@ -83,6 +83,8 @@ class PHP_TimerTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('02:01', PHP_Timer::secondsToTimeString(121));
         $this->assertEquals('01:00:00', PHP_Timer::secondsToTimeString(3600));
         $this->assertEquals('01:00:01', PHP_Timer::secondsToTimeString(3601));
+        // test fail
+        $this->assertEquals('01:00:02', PHP_Timer::secondsToTimeString(3603));
     }
 
     /**
